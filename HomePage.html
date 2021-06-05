@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My BLOG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="HomeCss.css.css">
+<style>
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: Lora, sans-serif;
+  padding: 0px;
+  background: white;
+  color: black;
+}
+
+h2 {
+  font-family: Ubuntu, sans-serif
+  font-size: 46px;
+  text-shadow: 2px 2px 5px red;
+}
+
+#home {
+  width: 70px;
+  height: 90px;
+  background: url(img_navsprites.gif) 0 0;
+}
+
+.header {
+  background-color: white;
+  padding: 30px;
+  color: black;
+  text-align: center;
+  font-family: "Sofia", sans-serif;
+  font-style: italic;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  margin: 0;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ff9999;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: #ff0000;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+::selection {
+  color: white;
+  background: #ffb3b3;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #ff8080;
+  width: 100%;
+  padding: 20px;
+}
+
+/* card effect for articles */
+.card {
+   background-color: #ffe6e6;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {color: white;}
+.fa-twitter {color: white;}
+.fa-youtube {color: white;}
+.fa-instagram {color: white;}
+.fa-pinterest {color: white;}
+.fa-soundcloud {color: white;}
+.fa-reddit {color: white;}
+.fa-rss {color: white;}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  margin-top: 20px;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1 class="glow"><img id="home" src="file:///C:/Users/lenovo/Desktop/Fresh/images/apple-icon.svg" width="1" height="1"> My Blog </h1>
+  <p>Articles . Poems . Reviews . Recommendations . Blogs </p>
+</div>
+
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">About Us</a>
+  <a href="javascript:void(0)">Contact</a>
+</div>
+
+<!-- Container -->
+<div class="content">
+  <h1>Example</h1>
+  <p>The navbar will stick to the top when you reach its scroll position.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  
+ <div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Support On : </h3>
+      <p>...</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+window.onscroll = function() {stickyBarFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function stickyBarFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Follow Us On : 
+ <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-reddit"></a>
+<a href="#" class="fa fa-rss"></a></h2>
+</div>
+</body>
+</html>
